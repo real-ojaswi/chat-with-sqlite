@@ -103,14 +103,7 @@ def main():
                 st.markdown(ai_response['output'])
 
             st.session_state.chat_history.append(AIMessage(content= ai_response['output']))
-            
 
-        # # Display chat history
-        # chat_container= st.container()
-        # with chat_container:
-        #     for i, (user_msg, ai_msg) in enumerate(st.session_state.chat_history):
-        #         st.markdown(f"**User:** {user_msg}")
-        #         st.markdown(f"**AI:** {ai_msg}")
 
 if __name__ == '__main__':
     main()
